@@ -39,7 +39,7 @@
   padding: 10px 16px;
   margin: 25px 0;
   border-bottom: 1px solid #fafafa;
-  transition: all 500ms;
+  transition: all 600ms;
 }
 .blog-preview:hover {
   transform: scale(1.1);
