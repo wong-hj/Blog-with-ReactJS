@@ -1,20 +1,23 @@
 
 import Navbar from './navbar';
 import Home from './home';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
-  const title = "Welcome to the new blog";
-  const likes = 50;
-  const link = "http://www.google.com";
-  // const person = { name: "Yoshi", age: 30};
 
   return (
-    <div className="App">
-      <Navbar></Navbar>
-      <div className="content">
-        <Home></Home>
+    <Router>
+      <div className="App">
+        <Navbar></Navbar>
+        <div className="content">
+          <Switch>
+            <Route path="/"> 
+              <Home></Home>
+            </Route>
+          </Switch>
+        </div>
       </div>
-    </div>
+    </Router>
   );
 }
 
